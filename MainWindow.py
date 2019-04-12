@@ -13,46 +13,82 @@ class Ui_MainWindow(object):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(600, 800)
         MainWindow.setMaximumSize(QtCore.QSize(600, 800))
+        MainWindow.setStyleSheet("background-color: rgb(255, 255, 255);")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.gridLayout = QtWidgets.QGridLayout(self.centralwidget)
         self.gridLayout.setObjectName("gridLayout")
         self.tabWidget = QtWidgets.QTabWidget(self.centralwidget)
         font = QtGui.QFont()
-        font.setFamily("Open Sans")
-        font.setPointSize(10)
-        font.setBold(False)
-        font.setWeight(50)
+        font.setBold(True)
+        font.setWeight(75)
         self.tabWidget.setFont(font)
+        self.tabWidget.setStyleSheet("font-weight: bold;\n"
+"color: #00007f;\n"
+"background-color: #fff;")
         self.tabWidget.setObjectName("tabWidget")
         self.search = QtWidgets.QWidget()
         self.search.setObjectName("search")
         self.gridLayout_2 = QtWidgets.QGridLayout(self.search)
         self.gridLayout_2.setObjectName("gridLayout_2")
         self.srch_btn = QtWidgets.QPushButton(self.search)
+        self.srch_btn.setMinimumSize(QtCore.QSize(80, 30))
         font = QtGui.QFont()
-        font.setFamily("Open Sans")
-        font.setPointSize(10)
+        font.setBold(True)
+        font.setWeight(75)
         self.srch_btn.setFont(font)
+        self.srch_btn.setStyleSheet("QPushButton, QPushButton:focus, QPushButton:focus {\n"
+"font-weight: bold;\n"
+"border: 1px solid #00007f;\n"
+"border-radius: 15px;\n"
+"color: #00007f;\n"
+"background-color: #fff;\n"
+"}\n"
+"\n"
+"QPushButton:hover, QPushButton:hover:focus {\n"
+"font-weight: bold;\n"
+"border: 1px solid #00007f;\n"
+"border-radius: 15px;\n"
+"color: #00007f;\n"
+"background-color: #eaffff;\n"
+"}\n"
+"\n"
+"QPushButton:pressed,QPushButton:pressed:focus {\n"
+"font-weight: bold;\n"
+"border: 1px solid #00007f;\n"
+"border-radius: 15px;\n"
+"color: #fff;\n"
+"background-color: #00007f;\n"
+"}")
         self.srch_btn.setObjectName("srch_btn")
         self.gridLayout_2.addWidget(self.srch_btn, 0, 1, 1, 1)
         self.srch_line = QtWidgets.QLineEdit(self.search)
+        self.srch_line.setMinimumSize(QtCore.QSize(0, 30))
         font = QtGui.QFont()
-        font.setFamily("Open Sans")
-        font.setPointSize(10)
+        font.setBold(True)
+        font.setWeight(75)
         self.srch_line.setFont(font)
+        self.srch_line.setStyleSheet("font-weight: bold;\n"
+"border: 1px solid #00007f;\n"
+"border-radius: 10px;\n"
+"color: #00007f;\n"
+"background-color: #fff;")
         self.srch_line.setInputMask("")
         self.srch_line.setCursorPosition(0)
         self.srch_line.setClearButtonEnabled(True)
         self.srch_line.setObjectName("srch_line")
         self.gridLayout_2.addWidget(self.srch_line, 0, 0, 1, 1)
         self.widget = QtWidgets.QScrollArea(self.search)
-        self.widget.setStyleSheet("background-color: rgb(255, 255, 255);")
+        self.widget.setStyleSheet("font-weight: bold;\n"
+"border: 1px solid #00007f;\n"
+"border-radius: 10px;\n"
+"color: #00007f;\n"
+"background-color: #fff;")
         self.widget.setWidgetResizable(True)
         self.widget.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignTop)
         self.widget.setObjectName("widget")
         self.scrollAreaWidgetContents = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 556, 639))
+        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 556, 630))
         self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents)
         self.verticalLayout.setObjectName("verticalLayout")
@@ -60,12 +96,12 @@ class Ui_MainWindow(object):
         self.gridLayout_2.addWidget(self.widget, 2, 0, 1, 2)
         self.label = QtWidgets.QLabel(self.search)
         font = QtGui.QFont()
-        font.setFamily("Open Sans SemiBold")
-        font.setPointSize(10)
-        font.setBold(False)
-        font.setWeight(50)
-        font.setKerning(True)
+        font.setBold(True)
+        font.setWeight(75)
         self.label.setFont(font)
+        self.label.setStyleSheet("font-weight: bold;\n"
+"color: #00007f;\n"
+"")
         self.label.setObjectName("label")
         self.gridLayout_2.addWidget(self.label, 1, 0, 1, 1)
         self.tabWidget.addTab(self.search, "")
@@ -79,21 +115,39 @@ class Ui_MainWindow(object):
         font.setBold(True)
         font.setWeight(75)
         self.add_recept.setFont(font)
-        self.add_recept.setStyleSheet("font-weight: bold;\n"
+        self.add_recept.setStyleSheet("QPushButton, QPushButton:focus, QPushButton:focus {\n"
+"font-weight: bold;\n"
 "border: 1px solid #00007f;\n"
 "border-radius: 15px;\n"
 "color: #00007f;\n"
-"background-color: #fff;")
+"background-color: #fff;\n"
+"}\n"
+"\n"
+"QPushButton:hover, QPushButton:hover:focus {\n"
+"font-weight: bold;\n"
+"border: 1px solid #00007f;\n"
+"border-radius: 15px;\n"
+"color: #00007f;\n"
+"background-color: #eaffff;\n"
+"}\n"
+"\n"
+"QPushButton:pressed,QPushButton:pressed:focus {\n"
+"font-weight: bold;\n"
+"border: 1px solid #00007f;\n"
+"border-radius: 15px;\n"
+"color: #fff;\n"
+"background-color: #00007f;\n"
+"}")
         self.add_recept.setObjectName("add_recept")
         self.gridLayout_3.addWidget(self.add_recept, 5, 2, 1, 3)
         self.description = QtWidgets.QLabel(self.new_recipe)
         self.description.setMaximumSize(QtCore.QSize(79, 20))
         font = QtGui.QFont()
-        font.setFamily("Open Sans SemiBold")
-        font.setPointSize(10)
-        font.setBold(False)
-        font.setWeight(50)
+        font.setBold(True)
+        font.setWeight(75)
         self.description.setFont(font)
+        self.description.setStyleSheet("font-weight: bold;\n"
+"color: #00007f;")
         self.description.setObjectName("description")
         self.gridLayout_3.addWidget(self.description, 4, 0, 1, 1)
         self.list_ingr = QtWidgets.QComboBox(self.new_recipe)
@@ -117,11 +171,12 @@ class Ui_MainWindow(object):
         self.name_recipe = QtWidgets.QLabel(self.new_recipe)
         self.name_recipe.setMaximumSize(QtCore.QSize(79, 16777215))
         font = QtGui.QFont()
-        font.setFamily("Open Sans SemiBold")
-        font.setPointSize(10)
-        font.setBold(False)
-        font.setWeight(50)
+        font.setBold(True)
+        font.setWeight(75)
         self.name_recipe.setFont(font)
+        self.name_recipe.setStyleSheet("font-weight: bold;\n"
+"color: #00007f;\n"
+"")
         self.name_recipe.setObjectName("name_recipe")
         self.gridLayout_3.addWidget(self.name_recipe, 0, 0, 1, 1)
         self.list_ing_n = QtWidgets.QTextBrowser(self.new_recipe)
@@ -152,11 +207,11 @@ class Ui_MainWindow(object):
         self.ingr = QtWidgets.QLabel(self.new_recipe)
         self.ingr.setMinimumSize(QtCore.QSize(79, 0))
         font = QtGui.QFont()
-        font.setFamily("Open Sans SemiBold")
-        font.setPointSize(10)
-        font.setBold(False)
-        font.setWeight(50)
+        font.setBold(True)
+        font.setWeight(75)
         self.ingr.setFont(font)
+        self.ingr.setStyleSheet("font-weight: bold;\n"
+"color: #00007f;")
         self.ingr.setObjectName("ingr")
         self.gridLayout_3.addWidget(self.ingr, 1, 0, 1, 1)
         self.add_ingr = QtWidgets.QPushButton(self.new_recipe)
@@ -166,12 +221,30 @@ class Ui_MainWindow(object):
         font.setBold(True)
         font.setWeight(75)
         self.add_ingr.setFont(font)
-        self.add_ingr.setStyleSheet("font-weight: bold;\n"
+        self.add_ingr.setStyleSheet("QPushButton, QPushButton:focus, QPushButton:focus {\n"
+"font-weight: bold;\n"
 "border: 1px solid #00007f;\n"
 "border-radius: 15px;\n"
 "color: #00007f;\n"
 "background-color: #fff;\n"
-"selection-color: rgb(85, 255, 255);")
+"}\n"
+"\n"
+"QPushButton:hover, QPushButton:hover:focus {\n"
+"font-weight: bold;\n"
+"border: 1px solid #00007f;\n"
+"border-radius: 15px;\n"
+"color: #00007f;\n"
+"background-color: #eaffff;\n"
+"}\n"
+"\n"
+"QPushButton:pressed,QPushButton:pressed:focus {\n"
+"font-weight: bold;\n"
+"border: 1px solid #00007f;\n"
+"border-radius: 15px;\n"
+"color: #fff;\n"
+"background-color: #00007f;\n"
+"}\n"
+"")
         self.add_ingr.setObjectName("add_ingr")
         self.gridLayout_3.addWidget(self.add_ingr, 1, 4, 1, 1)
         self.name = QtWidgets.QLineEdit(self.new_recipe)
@@ -207,11 +280,29 @@ class Ui_MainWindow(object):
         font.setBold(True)
         font.setWeight(75)
         self.cln_ing.setFont(font)
-        self.cln_ing.setStyleSheet("font-weight: bold;\n"
+        self.cln_ing.setStyleSheet("QPushButton, QPushButton:focus, QPushButton:focus {\n"
+"font-weight: bold;\n"
 "border: 1px solid #00007f;\n"
 "border-radius: 15px;\n"
 "color: #00007f;\n"
 "background-color: #fff;\n"
+"}\n"
+"\n"
+"QPushButton:hover, QPushButton:hover:focus {\n"
+"font-weight: bold;\n"
+"border: 1px solid #00007f;\n"
+"border-radius: 15px;\n"
+"color: #00007f;\n"
+"background-color: #eaffff;\n"
+"}\n"
+"\n"
+"QPushButton:pressed,QPushButton:pressed:focus {\n"
+"font-weight: bold;\n"
+"border: 1px solid #00007f;\n"
+"border-radius: 15px;\n"
+"color: #fff;\n"
+"background-color: #00007f;\n"
+"}\n"
 "")
         self.cln_ing.setObjectName("cln_ing")
         self.gridLayout_3.addWidget(self.cln_ing, 3, 4, 1, 1)
@@ -221,54 +312,121 @@ class Ui_MainWindow(object):
         self.gridLayout_4 = QtWidgets.QGridLayout(self.edit_recipe)
         self.gridLayout_4.setObjectName("gridLayout_4")
         self.del_btn_e = QtWidgets.QPushButton(self.edit_recipe)
+        self.del_btn_e.setMinimumSize(QtCore.QSize(80, 30))
         font = QtGui.QFont()
-        font.setFamily("Open Sans")
-        font.setPointSize(10)
+        font.setBold(True)
+        font.setWeight(75)
         self.del_btn_e.setFont(font)
+        self.del_btn_e.setStyleSheet("QPushButton, QPushButton:focus, QPushButton:focus {\n"
+"font-weight: bold;\n"
+"border: 1px solid #00007f;\n"
+"border-radius: 15px;\n"
+"color: #00007f;\n"
+"background-color: #fff;\n"
+"}\n"
+"\n"
+"QPushButton:hover, QPushButton:hover:focus {\n"
+"font-weight: bold;\n"
+"border: 1px solid #00007f;\n"
+"border-radius: 15px;\n"
+"color: #00007f;\n"
+"background-color: #eaffff;\n"
+"}\n"
+"\n"
+"QPushButton:pressed,QPushButton:pressed:focus {\n"
+"font-weight: bold;\n"
+"border: 1px solid #00007f;\n"
+"border-radius: 15px;\n"
+"color: #fff;\n"
+"background-color: #00007f;\n"
+"}\n"
+"")
         self.del_btn_e.setObjectName("del_btn_e")
         self.gridLayout_4.addWidget(self.del_btn_e, 7, 3, 1, 1)
         self.description_2 = QtWidgets.QLabel(self.edit_recipe)
         self.description_2.setMaximumSize(QtCore.QSize(79, 16777215))
         font = QtGui.QFont()
-        font.setFamily("Open Sans SemiBold")
-        font.setPointSize(10)
+        font.setBold(True)
+        font.setWeight(75)
         self.description_2.setFont(font)
         self.description_2.setObjectName("description_2")
         self.gridLayout_4.addWidget(self.description_2, 6, 0, 1, 1)
         self.list_desc_2 = QtWidgets.QTextEdit(self.edit_recipe)
         font = QtGui.QFont()
-        font.setFamily("Open Sans")
-        font.setPointSize(10)
+        font.setBold(True)
+        font.setWeight(75)
         self.list_desc_2.setFont(font)
+        self.list_desc_2.setStyleSheet("font-weight: bold;\n"
+"border: 1px solid #00007f;\n"
+"border-radius: 10px;\n"
+"color: #00007f;\n"
+"background-color: #fff;")
         self.list_desc_2.setObjectName("list_desc_2")
         self.gridLayout_4.addWidget(self.list_desc_2, 6, 1, 1, 3)
         self.save_btn_e = QtWidgets.QPushButton(self.edit_recipe)
+        self.save_btn_e.setMinimumSize(QtCore.QSize(0, 30))
         font = QtGui.QFont()
-        font.setFamily("Open Sans")
-        font.setPointSize(10)
+        font.setBold(True)
+        font.setWeight(75)
         self.save_btn_e.setFont(font)
+        self.save_btn_e.setStyleSheet("QPushButton, QPushButton:focus, QPushButton:focus {\n"
+"font-weight: bold;\n"
+"border: 1px solid #00007f;\n"
+"border-radius: 15px;\n"
+"color: #00007f;\n"
+"background-color: #fff;\n"
+"}\n"
+"\n"
+"QPushButton:hover, QPushButton:hover:focus {\n"
+"font-weight: bold;\n"
+"border: 1px solid #00007f;\n"
+"border-radius: 15px;\n"
+"color: #00007f;\n"
+"background-color: #eaffff;\n"
+"}\n"
+"\n"
+"QPushButton:pressed,QPushButton:pressed:focus {\n"
+"font-weight: bold;\n"
+"border: 1px solid #00007f;\n"
+"border-radius: 15px;\n"
+"color: #fff;\n"
+"background-color: #00007f;\n"
+"}\n"
+"")
         self.save_btn_e.setObjectName("save_btn_e")
         self.gridLayout_4.addWidget(self.save_btn_e, 7, 1, 1, 1)
         self.name_recipe_2 = QtWidgets.QLabel(self.edit_recipe)
         self.name_recipe_2.setMaximumSize(QtCore.QSize(79, 16777215))
         font = QtGui.QFont()
-        font.setFamily("Open Sans SemiBold")
-        font.setPointSize(10)
+        font.setBold(True)
+        font.setWeight(75)
         self.name_recipe_2.setFont(font)
         self.name_recipe_2.setObjectName("name_recipe_2")
         self.gridLayout_4.addWidget(self.name_recipe_2, 2, 0, 1, 1)
         self.name_2 = QtWidgets.QLineEdit(self.edit_recipe)
+        self.name_2.setMinimumSize(QtCore.QSize(0, 30))
         font = QtGui.QFont()
-        font.setFamily("Open Sans")
-        font.setPointSize(10)
+        font.setBold(True)
+        font.setWeight(75)
         self.name_2.setFont(font)
+        self.name_2.setStyleSheet("font-weight: bold;\n"
+"border: 1px solid #00007f;\n"
+"border-radius: 10px;\n"
+"color: #00007f;\n"
+"background-color: #fff;")
         self.name_2.setObjectName("name_2")
         self.gridLayout_4.addWidget(self.name_2, 2, 1, 1, 3)
         self.list_ingr_2 = QtWidgets.QComboBox(self.edit_recipe)
+        self.list_ingr_2.setMinimumSize(QtCore.QSize(0, 30))
         font = QtGui.QFont()
-        font.setFamily("Open Sans")
-        font.setPointSize(10)
+        font.setBold(True)
+        font.setWeight(75)
         self.list_ingr_2.setFont(font)
+        self.list_ingr_2.setStyleSheet("font-weight: bold;\n"
+"border: 1px solid #00007f;\n"
+"border-radius: 10px;\n"
+"color: #00007f;\n"
+"background-color: #fff;")
         self.list_ingr_2.setEditable(True)
         self.list_ingr_2.setCurrentText("")
         self.list_ingr_2.setFrame(True)
@@ -277,56 +435,148 @@ class Ui_MainWindow(object):
         self.list_ingr_2.setItemText(0, "")
         self.gridLayout_4.addWidget(self.list_ingr_2, 3, 1, 1, 1)
         self.add_ingr_2 = QtWidgets.QPushButton(self.edit_recipe)
+        self.add_ingr_2.setMinimumSize(QtCore.QSize(80, 30))
         self.add_ingr_2.setMaximumSize(QtCore.QSize(84, 16777215))
         font = QtGui.QFont()
-        font.setFamily("Open Sans")
-        font.setPointSize(10)
+        font.setBold(True)
+        font.setWeight(75)
         self.add_ingr_2.setFont(font)
+        self.add_ingr_2.setStyleSheet("QPushButton, QPushButton:focus, QPushButton:focus {\n"
+"font-weight: bold;\n"
+"border: 1px solid #00007f;\n"
+"border-radius: 15px;\n"
+"color: #00007f;\n"
+"background-color: #fff;\n"
+"}\n"
+"\n"
+"QPushButton:hover, QPushButton:hover:focus {\n"
+"font-weight: bold;\n"
+"border: 1px solid #00007f;\n"
+"border-radius: 15px;\n"
+"color: #00007f;\n"
+"background-color: #eaffff;\n"
+"}\n"
+"\n"
+"QPushButton:pressed,QPushButton:pressed:focus {\n"
+"font-weight: bold;\n"
+"border: 1px solid #00007f;\n"
+"border-radius: 15px;\n"
+"color: #fff;\n"
+"background-color: #00007f;\n"
+"}\n"
+"")
         self.add_ingr_2.setObjectName("add_ingr_2")
         self.gridLayout_4.addWidget(self.add_ingr_2, 3, 3, 1, 1)
         self.ingr_2 = QtWidgets.QLabel(self.edit_recipe)
         self.ingr_2.setMinimumSize(QtCore.QSize(79, 0))
         font = QtGui.QFont()
-        font.setFamily("Open Sans SemiBold")
-        font.setPointSize(10)
+        font.setBold(True)
+        font.setWeight(75)
         self.ingr_2.setFont(font)
         self.ingr_2.setObjectName("ingr_2")
         self.gridLayout_4.addWidget(self.ingr_2, 3, 0, 1, 1)
         self.list_ing_e = QtWidgets.QTextBrowser(self.edit_recipe)
         self.list_ing_e.setMaximumSize(QtCore.QSize(16777215, 150))
         font = QtGui.QFont()
-        font.setFamily("Open Sans")
-        font.setPointSize(10)
+        font.setBold(True)
+        font.setWeight(75)
         self.list_ing_e.setFont(font)
+        self.list_ing_e.setStyleSheet("font-weight: bold;\n"
+"border: 1px solid #00007f;\n"
+"border-radius: 10px;\n"
+"color: #00007f;\n"
+"background-color: #fff;")
         self.list_ing_e.setObjectName("list_ing_e")
         self.gridLayout_4.addWidget(self.list_ing_e, 4, 1, 1, 3)
         self.cln_btn_e = QtWidgets.QPushButton(self.edit_recipe)
+        self.cln_btn_e.setMinimumSize(QtCore.QSize(80, 30))
         font = QtGui.QFont()
-        font.setFamily("Open Sans")
-        font.setPointSize(10)
+        font.setBold(True)
+        font.setWeight(75)
         self.cln_btn_e.setFont(font)
+        self.cln_btn_e.setStyleSheet("QPushButton, QPushButton:focus, QPushButton:focus {\n"
+"font-weight: bold;\n"
+"border: 1px solid #00007f;\n"
+"border-radius: 15px;\n"
+"color: #00007f;\n"
+"background-color: #fff;\n"
+"}\n"
+"\n"
+"QPushButton:hover, QPushButton:hover:focus {\n"
+"font-weight: bold;\n"
+"border: 1px solid #00007f;\n"
+"border-radius: 15px;\n"
+"color: #00007f;\n"
+"background-color: #eaffff;\n"
+"}\n"
+"\n"
+"QPushButton:pressed,QPushButton:pressed:focus {\n"
+"font-weight: bold;\n"
+"border: 1px solid #00007f;\n"
+"border-radius: 15px;\n"
+"color: #fff;\n"
+"background-color: #00007f;\n"
+"}\n"
+"")
         self.cln_btn_e.setObjectName("cln_btn_e")
         self.gridLayout_4.addWidget(self.cln_btn_e, 5, 3, 1, 1)
         self.srch_edit_btn = QtWidgets.QPushButton(self.edit_recipe)
+        self.srch_edit_btn.setMinimumSize(QtCore.QSize(80, 30))
         font = QtGui.QFont()
-        font.setFamily("Open Sans")
-        font.setPointSize(10)
+        font.setBold(True)
+        font.setWeight(75)
         self.srch_edit_btn.setFont(font)
+        self.srch_edit_btn.setStyleSheet("QPushButton, QPushButton:focus, QPushButton:focus {\n"
+"font-weight: bold;\n"
+"border: 1px solid #00007f;\n"
+"border-radius: 15px;\n"
+"color: #00007f;\n"
+"background-color: #fff;\n"
+"}\n"
+"\n"
+"QPushButton:hover, QPushButton:hover:focus {\n"
+"font-weight: bold;\n"
+"border: 1px solid #00007f;\n"
+"border-radius: 15px;\n"
+"color: #00007f;\n"
+"background-color: #eaffff;\n"
+"}\n"
+"\n"
+"QPushButton:pressed,QPushButton:pressed:focus {\n"
+"font-weight: bold;\n"
+"border: 1px solid #00007f;\n"
+"border-radius: 15px;\n"
+"color: #fff;\n"
+"background-color: #00007f;\n"
+"}\n"
+"")
         self.srch_edit_btn.setObjectName("srch_edit_btn")
         self.gridLayout_4.addWidget(self.srch_edit_btn, 1, 3, 1, 1)
         self.vol_ing_e = QtWidgets.QLineEdit(self.edit_recipe)
+        self.vol_ing_e.setMinimumSize(QtCore.QSize(0, 30))
         self.vol_ing_e.setMaximumSize(QtCore.QSize(75, 16777215))
         font = QtGui.QFont()
-        font.setFamily("Open Sans")
-        font.setPointSize(10)
+        font.setBold(True)
+        font.setWeight(75)
         self.vol_ing_e.setFont(font)
+        self.vol_ing_e.setStyleSheet("font-weight: bold;\n"
+"border: 1px solid #00007f;\n"
+"border-radius: 10px;\n"
+"color: #00007f;\n"
+"background-color: #fff;")
         self.vol_ing_e.setObjectName("vol_ing_e")
         self.gridLayout_4.addWidget(self.vol_ing_e, 3, 2, 1, 1)
         self.src_edit_line = QtWidgets.QLineEdit(self.edit_recipe)
+        self.src_edit_line.setMinimumSize(QtCore.QSize(0, 30))
         font = QtGui.QFont()
-        font.setFamily("Open Sans")
-        font.setPointSize(10)
+        font.setBold(True)
+        font.setWeight(75)
         self.src_edit_line.setFont(font)
+        self.src_edit_line.setStyleSheet("font-weight: bold;\n"
+"border: 1px solid #00007f;\n"
+"border-radius: 10px;\n"
+"color: #00007f;\n"
+"background-color: #fff;")
         self.src_edit_line.setObjectName("src_edit_line")
         self.gridLayout_4.addWidget(self.src_edit_line, 1, 1, 1, 2)
         self.tabWidget.addTab(self.edit_recipe, "")
@@ -336,9 +586,14 @@ class Ui_MainWindow(object):
         self.gridLayout_6.setObjectName("gridLayout_6")
         self.table_ingr = QtWidgets.QTableWidget(self.directory)
         font = QtGui.QFont()
-        font.setFamily("Open Sans")
-        font.setPointSize(10)
+        font.setBold(True)
+        font.setWeight(75)
         self.table_ingr.setFont(font)
+        self.table_ingr.setStyleSheet("font-weight: bold;\n"
+"border: 1px solid #00007f;\n"
+"border-radius: 10px;\n"
+"color: #00007f;\n"
+"background-color: #fff;")
         self.table_ingr.setLineWidth(0)
         self.table_ingr.setEditTriggers(QtWidgets.QAbstractItemView.NoEditTriggers)
         self.table_ingr.setTabKeyNavigation(False)
@@ -384,10 +639,35 @@ class Ui_MainWindow(object):
         self.gridLayout_5 = QtWidgets.QGridLayout(self.frame)
         self.gridLayout_5.setObjectName("gridLayout_5")
         self.disc_add_ingr = QtWidgets.QPushButton(self.frame)
+        self.disc_add_ingr.setMinimumSize(QtCore.QSize(80, 30))
         font = QtGui.QFont()
-        font.setFamily("Open Sans")
-        font.setPointSize(10)
+        font.setBold(True)
+        font.setWeight(75)
         self.disc_add_ingr.setFont(font)
+        self.disc_add_ingr.setStyleSheet("QPushButton, QPushButton:focus, QPushButton:focus {\n"
+"font-weight: bold;\n"
+"border: 1px solid #00007f;\n"
+"border-radius: 15px;\n"
+"color: #00007f;\n"
+"background-color: #fff;\n"
+"}\n"
+"\n"
+"QPushButton:hover, QPushButton:hover:focus {\n"
+"font-weight: bold;\n"
+"border: 1px solid #00007f;\n"
+"border-radius: 15px;\n"
+"color: #00007f;\n"
+"background-color: #eaffff;\n"
+"}\n"
+"\n"
+"QPushButton:pressed,QPushButton:pressed:focus {\n"
+"font-weight: bold;\n"
+"border: 1px solid #00007f;\n"
+"border-radius: 15px;\n"
+"color: #fff;\n"
+"background-color: #00007f;\n"
+"}\n"
+"")
         self.disc_add_ingr.setObjectName("disc_add_ingr")
         self.gridLayout_5.addWidget(self.disc_add_ingr, 1, 1, 1, 1)
         self.disc_ingr = QtWidgets.QLabel(self.frame)
@@ -401,10 +681,16 @@ class Ui_MainWindow(object):
         self.disc_ingr.setObjectName("disc_ingr")
         self.gridLayout_5.addWidget(self.disc_ingr, 0, 0, 1, 1)
         self.disc_name_ingr = QtWidgets.QLineEdit(self.frame)
+        self.disc_name_ingr.setMinimumSize(QtCore.QSize(0, 30))
         font = QtGui.QFont()
-        font.setFamily("Open Sans")
-        font.setPointSize(10)
+        font.setBold(True)
+        font.setWeight(75)
         self.disc_name_ingr.setFont(font)
+        self.disc_name_ingr.setStyleSheet("font-weight: bold;\n"
+"border: 1px solid #00007f;\n"
+"border-radius: 10px;\n"
+"color: #00007f;\n"
+"background-color: #fff;")
         self.disc_name_ingr.setObjectName("disc_name_ingr")
         self.gridLayout_5.addWidget(self.disc_name_ingr, 1, 0, 1, 1)
         self.gridLayout_6.addWidget(self.frame, 0, 0, 1, 1)
@@ -420,7 +706,7 @@ class Ui_MainWindow(object):
         MainWindow.setStatusBar(self.statusbar)
 
         self.retranslateUi(MainWindow)
-        self.tabWidget.setCurrentIndex(1)
+        self.tabWidget.setCurrentIndex(0)
         self.list_ingr.setCurrentIndex(0)
         self.cln_ing.clicked.connect(self.list_ing_n.clear)
         self.cln_btn_e.clicked.connect(self.list_ing_e.clear)

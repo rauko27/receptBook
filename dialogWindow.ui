@@ -75,6 +75,11 @@
        <bold>true</bold>
       </font>
      </property>
+     <property name="styleSheet">
+      <string notr="true">font-weight: bold;
+color: #00007f;
+</string>
+     </property>
      <property name="text">
       <string>Вы уверены что хотите удалить рецепт?</string>
      </property>

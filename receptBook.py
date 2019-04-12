@@ -104,6 +104,29 @@ class mywindow(QtWidgets.QMainWindow):
     # кнопка удаления ингридиента
     def btn_in_ing(self, id_ing):
         self.btn = QtWidgets.QPushButton('Удалить')
+        self.btn.setStyleSheet("QPushButton, QPushButton:focus, QPushButton:focus {\n"
+                                    "font-weight: bold;\n"
+                                    "border: 1px solid #00007f;\n"
+                                    "border-radius: 10x;\n"
+                                    "color: #00007f;\n"
+                                    "background-color: #fff;\n"
+                                    "}\n"
+                                    "\n"
+                                    "QPushButton:hover, QPushButton:hover:focus {\n"
+                                    "font-weight: bold;\n"
+                                    "border: 1px solid #00007f;\n"
+                                    "border-radius: 10px;\n"
+                                    "color: #00007f;\n"
+                                    "background-color: #eaffff;\n"
+                                    "}\n"
+                                    "\n"
+                                    "QPushButton:pressed,QPushButton:pressed:focus {\n"
+                                    "font-weight: bold;\n"
+                                    "border: 1px solid #00007f;\n"
+                                    "border-radius: 10px;\n"
+                                    "color: #fff;\n"
+                                    "background-color: #00007f;\n"
+                                    "}")
         self.btn.setObjectName(id_ing)
         self.btn.clicked.connect(lambda: self.del_ing(id_ing))
         return self.btn

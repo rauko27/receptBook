@@ -24,6 +24,11 @@
        <bold>true</bold>
       </font>
      </property>
+     <property name="styleSheet">
+      <string notr="true">font-weight: bold;
+color: #00007f;
+</string>
+     </property>
      <property name="text">
       <string>TextLabel</string>
      </property>
@@ -39,9 +44,16 @@
      </property>
      <property name="font">
       <font>
-       <family>Open Sans</family>
-       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-weight: bold;
+border: 1px solid #00007f;
+border-radius: 10px;
+color: #00007f;
+background-color: #fff;</string>
      </property>
     </widget>
    </item>
@@ -49,19 +61,57 @@
     <widget class="QTextBrowser" name="disc_recept">
      <property name="font">
       <font>
-       <family>Open Sans</family>
-       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-weight: bold;
+border: 1px solid #00007f;
+border-radius: 10px;
+color: #00007f;
+background-color: #fff;</string>
      </property>
     </widget>
    </item>
    <item>
     <widget class="QPushButton" name="quitBtn">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>30</height>
+      </size>
+     </property>
      <property name="font">
       <font>
-       <family>Open Sans</family>
-       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton, QPushButton:focus, QPushButton:focus {
+font-weight: bold;
+border: 1px solid #00007f;
+border-radius: 15px;
+color: #00007f;
+background-color: #fff;
+}
+
+QPushButton:hover, QPushButton:hover:focus {
+font-weight: bold;
+border: 1px solid #00007f;
+border-radius: 15px;
+color: #00007f;
+background-color: #eaffff;
+}
+
+QPushButton:pressed,QPushButton:pressed:focus {
+font-weight: bold;
+border: 1px solid #00007f;
+border-radius: 15px;
+color: #fff;
+background-color: #00007f;
+}</string>
      </property>
      <property name="text">
       <string>Закрыть</string>

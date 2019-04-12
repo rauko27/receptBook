@@ -28,14 +28,17 @@
      <widget class="QTabWidget" name="tabWidget">
       <property name="font">
        <font>
-        <family>Open Sans</family>
-        <pointsize>10</pointsize>
-        <weight>50</weight>
-        <bold>false</bold>
+        <weight>75</weight>
+        <bold>true</bold>
        </font>
       </property>
+      <property name="styleSheet">
+       <string notr="true">font-weight: bold;
+color: #00007f;
+background-color: #fff;</string>
+      </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="search">
        <attribute name="title">
@@ -44,11 +47,42 @@
        <layout class="QGridLayout" name="gridLayout_2">
         <item row="0" column="1">
          <widget class="QPushButton" name="srch_btn">
+          <property name="minimumSize">
+           <size>
+            <width>80</width>
+            <height>30</height>
+           </size>
+          </property>
           <property name="font">
            <font>
-            <family>Open Sans</family>
-            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
            </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton, QPushButton:focus, QPushButton:focus {
+font-weight: bold;
+border: 1px solid #00007f;
+border-radius: 15px;
+color: #00007f;
+background-color: #fff;
+}
+
+QPushButton:hover, QPushButton:hover:focus {
+font-weight: bold;
+border: 1px solid #00007f;
+border-radius: 15px;
+color: #00007f;
+background-color: #eaffff;
+}
+
+QPushButton:pressed,QPushButton:pressed:focus {
+font-weight: bold;
+border: 1px solid #00007f;
+border-radius: 15px;
+color: #fff;
+background-color: #00007f;
+}</string>
           </property>
           <property name="text">
            <string>Поиск</string>
@@ -57,11 +91,24 @@
         </item>
         <item row="0" column="0">
          <widget class="QLineEdit" name="srch_line">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>30</height>
+           </size>
+          </property>
           <property name="font">
            <font>
-            <family>Open Sans</family>
-            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
            </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font-weight: bold;
+border: 1px solid #00007f;
+border-radius: 10px;
+color: #00007f;
+background-color: #fff;</string>
           </property>
           <property name="inputMask">
            <string/>
@@ -80,7 +127,11 @@
         <item row="2" column="0" colspan="2">
          <widget class="QScrollArea" name="widget">
           <property name="styleSheet">
-           <string notr="true">background-color: rgb(255, 255, 255);</string>
+           <string notr="true">font-weight: bold;
+border: 1px solid #00007f;
+border-radius: 10px;
+color: #00007f;
+background-color: #fff;</string>
           </property>
           <property name="widgetResizable">
            <bool>true</bool>
@@ -94,7 +145,7 @@
              <x>0</x>
              <y>0</y>
              <width>556</width>
-             <height>634</height>
+             <height>630</height>
             </rect>
            </property>
            <layout class="QVBoxLayout" name="verticalLayout"/>
@@ -105,12 +156,14 @@
          <widget class="QLabel" name="label">
           <property name="font">
            <font>
-            <family>Open Sans SemiBold</family>
-            <pointsize>10</pointsize>
-            <weight>50</weight>
-            <bold>false</bold>
-            <kerning>true</kerning>
+            <weight>75</weight>
+            <bold>true</bold>
            </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font-weight: bold;
+color: #00007f;
+</string>
           </property>
           <property name="text">
            <string>Результат поиска:</string>
@@ -344,9 +397,9 @@ color: #00007f;</string>
           <property name="styleSheet">
            <string notr="true">QPushButton, QPushButton:focus, QPushButton:focus {
 font-weight: bold;
-border: 1px solid #64B5F6;
+border: 1px solid #00007f;
 border-radius: 15px;
-color: #64B5F6;
+color: #00007f;
 background-color: #fff;
 }
 
@@ -364,7 +417,8 @@ border: 1px solid #00007f;
 border-radius: 15px;
 color: #fff;
 background-color: #00007f;
-}</string>
+}
+</string>
           </property>
           <property name="text">
            <string>Добавить</string>
@@ -483,11 +537,43 @@ background-color: #00007f;
        <layout class="QGridLayout" name="gridLayout_4">
         <item row="7" column="3">
          <widget class="QPushButton" name="del_btn_e">
+          <property name="minimumSize">
+           <size>
+            <width>80</width>
+            <height>30</height>
+           </size>
+          </property>
           <property name="font">
            <font>
-            <family>Open Sans</family>
-            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
            </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton, QPushButton:focus, QPushButton:focus {
+font-weight: bold;
+border: 1px solid #00007f;
+border-radius: 15px;
+color: #00007f;
+background-color: #fff;
+}
+
+QPushButton:hover, QPushButton:hover:focus {
+font-weight: bold;
+border: 1px solid #00007f;
+border-radius: 15px;
+color: #00007f;
+background-color: #eaffff;
+}
+
+QPushButton:pressed,QPushButton:pressed:focus {
+font-weight: bold;
+border: 1px solid #00007f;
+border-radius: 15px;
+color: #fff;
+background-color: #00007f;
+}
+</string>
           </property>
           <property name="text">
            <string>Удалить</string>
@@ -504,8 +590,8 @@ background-color: #00007f;
           </property>
           <property name="font">
            <font>
-            <family>Open Sans SemiBold</family>
-            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
            </font>
           </property>
           <property name="text">
@@ -517,19 +603,58 @@ background-color: #00007f;
          <widget class="QTextEdit" name="list_desc_2">
           <property name="font">
            <font>
-            <family>Open Sans</family>
-            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
            </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font-weight: bold;
+border: 1px solid #00007f;
+border-radius: 10px;
+color: #00007f;
+background-color: #fff;</string>
           </property>
          </widget>
         </item>
         <item row="7" column="1">
          <widget class="QPushButton" name="save_btn_e">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>30</height>
+           </size>
+          </property>
           <property name="font">
            <font>
-            <family>Open Sans</family>
-            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
            </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton, QPushButton:focus, QPushButton:focus {
+font-weight: bold;
+border: 1px solid #00007f;
+border-radius: 15px;
+color: #00007f;
+background-color: #fff;
+}
+
+QPushButton:hover, QPushButton:hover:focus {
+font-weight: bold;
+border: 1px solid #00007f;
+border-radius: 15px;
+color: #00007f;
+background-color: #eaffff;
+}
+
+QPushButton:pressed,QPushButton:pressed:focus {
+font-weight: bold;
+border: 1px solid #00007f;
+border-radius: 15px;
+color: #fff;
+background-color: #00007f;
+}
+</string>
           </property>
           <property name="text">
            <string>Сохранить</string>
@@ -546,8 +671,8 @@ background-color: #00007f;
           </property>
           <property name="font">
            <font>
-            <family>Open Sans SemiBold</family>
-            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
            </font>
           </property>
           <property name="text">
@@ -557,11 +682,24 @@ background-color: #00007f;
         </item>
         <item row="2" column="1" colspan="3">
          <widget class="QLineEdit" name="name_2">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>30</height>
+           </size>
+          </property>
           <property name="font">
            <font>
-            <family>Open Sans</family>
-            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
            </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font-weight: bold;
+border: 1px solid #00007f;
+border-radius: 10px;
+color: #00007f;
+background-color: #fff;</string>
           </property>
           <property name="placeholderText">
            <string>Название..</string>
@@ -570,11 +708,24 @@ background-color: #00007f;
         </item>
         <item row="3" column="1">
          <widget class="QComboBox" name="list_ingr_2">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>30</height>
+           </size>
+          </property>
           <property name="font">
            <font>
-            <family>Open Sans</family>
-            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
            </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font-weight: bold;
+border: 1px solid #00007f;
+border-radius: 10px;
+color: #00007f;
+background-color: #fff;</string>
           </property>
           <property name="editable">
            <bool>true</bool>
@@ -594,6 +745,12 @@ background-color: #00007f;
         </item>
         <item row="3" column="3">
          <widget class="QPushButton" name="add_ingr_2">
+          <property name="minimumSize">
+           <size>
+            <width>80</width>
+            <height>30</height>
+           </size>
+          </property>
           <property name="maximumSize">
            <size>
             <width>84</width>
@@ -602,9 +759,35 @@ background-color: #00007f;
           </property>
           <property name="font">
            <font>
-            <family>Open Sans</family>
-            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
            </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton, QPushButton:focus, QPushButton:focus {
+font-weight: bold;
+border: 1px solid #00007f;
+border-radius: 15px;
+color: #00007f;
+background-color: #fff;
+}
+
+QPushButton:hover, QPushButton:hover:focus {
+font-weight: bold;
+border: 1px solid #00007f;
+border-radius: 15px;
+color: #00007f;
+background-color: #eaffff;
+}
+
+QPushButton:pressed,QPushButton:pressed:focus {
+font-weight: bold;
+border: 1px solid #00007f;
+border-radius: 15px;
+color: #fff;
+background-color: #00007f;
+}
+</string>
           </property>
           <property name="text">
            <string>Добавить</string>
@@ -621,8 +804,8 @@ background-color: #00007f;
           </property>
           <property name="font">
            <font>
-            <family>Open Sans SemiBold</family>
-            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
            </font>
           </property>
           <property name="text">
@@ -640,19 +823,58 @@ background-color: #00007f;
           </property>
           <property name="font">
            <font>
-            <family>Open Sans</family>
-            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
            </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font-weight: bold;
+border: 1px solid #00007f;
+border-radius: 10px;
+color: #00007f;
+background-color: #fff;</string>
           </property>
          </widget>
         </item>
         <item row="5" column="3">
          <widget class="QPushButton" name="cln_btn_e">
+          <property name="minimumSize">
+           <size>
+            <width>80</width>
+            <height>30</height>
+           </size>
+          </property>
           <property name="font">
            <font>
-            <family>Open Sans</family>
-            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
            </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton, QPushButton:focus, QPushButton:focus {
+font-weight: bold;
+border: 1px solid #00007f;
+border-radius: 15px;
+color: #00007f;
+background-color: #fff;
+}
+
+QPushButton:hover, QPushButton:hover:focus {
+font-weight: bold;
+border: 1px solid #00007f;
+border-radius: 15px;
+color: #00007f;
+background-color: #eaffff;
+}
+
+QPushButton:pressed,QPushButton:pressed:focus {
+font-weight: bold;
+border: 1px solid #00007f;
+border-radius: 15px;
+color: #fff;
+background-color: #00007f;
+}
+</string>
           </property>
           <property name="text">
            <string>Очистить</string>
@@ -661,11 +883,43 @@ background-color: #00007f;
         </item>
         <item row="1" column="3">
          <widget class="QPushButton" name="srch_edit_btn">
+          <property name="minimumSize">
+           <size>
+            <width>80</width>
+            <height>30</height>
+           </size>
+          </property>
           <property name="font">
            <font>
-            <family>Open Sans</family>
-            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
            </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton, QPushButton:focus, QPushButton:focus {
+font-weight: bold;
+border: 1px solid #00007f;
+border-radius: 15px;
+color: #00007f;
+background-color: #fff;
+}
+
+QPushButton:hover, QPushButton:hover:focus {
+font-weight: bold;
+border: 1px solid #00007f;
+border-radius: 15px;
+color: #00007f;
+background-color: #eaffff;
+}
+
+QPushButton:pressed,QPushButton:pressed:focus {
+font-weight: bold;
+border: 1px solid #00007f;
+border-radius: 15px;
+color: #fff;
+background-color: #00007f;
+}
+</string>
           </property>
           <property name="text">
            <string>Поиск</string>
@@ -674,6 +928,12 @@ background-color: #00007f;
         </item>
         <item row="3" column="2">
          <widget class="QLineEdit" name="vol_ing_e">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>30</height>
+           </size>
+          </property>
           <property name="maximumSize">
            <size>
             <width>75</width>
@@ -682,9 +942,16 @@ background-color: #00007f;
           </property>
           <property name="font">
            <font>
-            <family>Open Sans</family>
-            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
            </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font-weight: bold;
+border: 1px solid #00007f;
+border-radius: 10px;
+color: #00007f;
+background-color: #fff;</string>
           </property>
           <property name="placeholderText">
            <string>Количество</string>
@@ -693,11 +960,24 @@ background-color: #00007f;
         </item>
         <item row="1" column="1" colspan="2">
          <widget class="QLineEdit" name="src_edit_line">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>30</height>
+           </size>
+          </property>
           <property name="font">
            <font>
-            <family>Open Sans</family>
-            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
            </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font-weight: bold;
+border: 1px solid #00007f;
+border-radius: 10px;
+color: #00007f;
+background-color: #fff;</string>
           </property>
           <property name="placeholderText">
            <string>Введите название</string>
@@ -715,9 +995,16 @@ background-color: #00007f;
          <widget class="QTableWidget" name="table_ingr">
           <property name="font">
            <font>
-            <family>Open Sans</family>
-            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
            </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font-weight: bold;
+border: 1px solid #00007f;
+border-radius: 10px;
+color: #00007f;
+background-color: #fff;</string>
           </property>
           <property name="lineWidth">
            <number>0</number>
@@ -822,11 +1109,43 @@ background-color: #00007f;
           <layout class="QGridLayout" name="gridLayout_5">
            <item row="1" column="1">
             <widget class="QPushButton" name="disc_add_ingr">
+             <property name="minimumSize">
+              <size>
+               <width>80</width>
+               <height>30</height>
+              </size>
+             </property>
              <property name="font">
               <font>
-               <family>Open Sans</family>
-               <pointsize>10</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
               </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton, QPushButton:focus, QPushButton:focus {
+font-weight: bold;
+border: 1px solid #00007f;
+border-radius: 15px;
+color: #00007f;
+background-color: #fff;
+}
+
+QPushButton:hover, QPushButton:hover:focus {
+font-weight: bold;
+border: 1px solid #00007f;
+border-radius: 15px;
+color: #00007f;
+background-color: #eaffff;
+}
+
+QPushButton:pressed,QPushButton:pressed:focus {
+font-weight: bold;
+border: 1px solid #00007f;
+border-radius: 15px;
+color: #fff;
+background-color: #00007f;
+}
+</string>
              </property>
              <property name="text">
               <string>Добавить</string>
@@ -856,11 +1175,24 @@ background-color: #00007f;
            </item>
            <item row="1" column="0">
             <widget class="QLineEdit" name="disc_name_ingr">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>30</height>
+              </size>
+             </property>
              <property name="font">
               <font>
-               <family>Open Sans</family>
-               <pointsize>10</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
               </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font-weight: bold;
+border: 1px solid #00007f;
+border-radius: 10px;
+color: #00007f;
+background-color: #fff;</string>
              </property>
             </widget>
            </item>
