@@ -17,17 +17,22 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Книга рецептов</string>
+  </property>
+  <property name="toolTip">
+   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Книга рецептов&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: rgb(255, 255, 255);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
-    <item row="1" column="0">
+    <item row="0" column="0">
      <widget class="QTabWidget" name="tabWidget">
       <property name="font">
        <font>
+        <family>Open Sans</family>
+        <pointsize>12</pointsize>
         <weight>75</weight>
         <bold>true</bold>
        </font>
@@ -38,7 +43,7 @@ color: #00007f;
 background-color: #fff;</string>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>2</number>
       </property>
       <widget class="QWidget" name="search">
        <attribute name="title">
@@ -49,12 +54,14 @@ background-color: #fff;</string>
          <widget class="QPushButton" name="srch_btn">
           <property name="minimumSize">
            <size>
-            <width>80</width>
+            <width>100</width>
             <height>30</height>
            </size>
           </property>
           <property name="font">
            <font>
+            <family>Open Sans</family>
+            <pointsize>12</pointsize>
             <weight>75</weight>
             <bold>true</bold>
            </font>
@@ -99,6 +106,8 @@ background-color: #00007f;
           </property>
           <property name="font">
            <font>
+            <family>Open Sans</family>
+            <pointsize>12</pointsize>
             <weight>75</weight>
             <bold>true</bold>
            </font>
@@ -145,7 +154,7 @@ background-color: #fff;</string>
              <x>0</x>
              <y>0</y>
              <width>556</width>
-             <height>630</height>
+             <height>642</height>
             </rect>
            </property>
            <layout class="QVBoxLayout" name="verticalLayout"/>
@@ -156,6 +165,8 @@ background-color: #fff;</string>
          <widget class="QLabel" name="label">
           <property name="font">
            <font>
+            <family>Open Sans</family>
+            <pointsize>12</pointsize>
             <weight>75</weight>
             <bold>true</bold>
            </font>
@@ -187,6 +198,8 @@ color: #00007f;
           </property>
           <property name="font">
            <font>
+            <family>Open Sans</family>
+            <pointsize>12</pointsize>
             <weight>75</weight>
             <bold>true</bold>
            </font>
@@ -225,12 +238,14 @@ background-color: #00007f;
          <widget class="QLabel" name="description">
           <property name="maximumSize">
            <size>
-            <width>79</width>
+            <width>100</width>
             <height>20</height>
            </size>
           </property>
           <property name="font">
            <font>
+            <family>Open Sans</family>
+            <pointsize>12</pointsize>
             <weight>75</weight>
             <bold>true</bold>
            </font>
@@ -254,6 +269,8 @@ color: #00007f;</string>
           </property>
           <property name="font">
            <font>
+            <family>Open Sans</family>
+            <pointsize>12</pointsize>
             <weight>75</weight>
             <bold>true</bold>
            </font>
@@ -288,12 +305,14 @@ background-color: #fff;</string>
          <widget class="QLabel" name="name_recipe">
           <property name="maximumSize">
            <size>
-            <width>79</width>
+            <width>100</width>
             <height>16777215</height>
            </size>
           </property>
           <property name="font">
            <font>
+            <family>Open Sans</family>
+            <pointsize>12</pointsize>
             <weight>75</weight>
             <bold>true</bold>
            </font>
@@ -318,6 +337,8 @@ color: #00007f;
           </property>
           <property name="font">
            <font>
+            <family>Open Sans</family>
+            <pointsize>12</pointsize>
             <weight>75</weight>
             <bold>true</bold>
            </font>
@@ -335,6 +356,8 @@ background-color: #fff;</string>
          <widget class="QTextEdit" name="list_desc">
           <property name="font">
            <font>
+            <family>Open Sans</family>
+            <pointsize>12</pointsize>
             <weight>75</weight>
             <bold>true</bold>
            </font>
@@ -361,6 +384,8 @@ background-color: #fff;</string>
           </property>
           <property name="font">
            <font>
+            <family>Open Sans</family>
+            <pointsize>12</pointsize>
             <weight>75</weight>
             <bold>true</bold>
            </font>
@@ -390,6 +415,8 @@ color: #00007f;</string>
           </property>
           <property name="font">
            <font>
+            <family>Open Sans</family>
+            <pointsize>12</pointsize>
             <weight>75</weight>
             <bold>true</bold>
            </font>
@@ -435,6 +462,8 @@ background-color: #00007f;
           </property>
           <property name="font">
            <font>
+            <family>Open Sans</family>
+            <pointsize>12</pointsize>
             <weight>75</weight>
             <bold>true</bold>
            </font>
@@ -467,6 +496,8 @@ background-color: #fff;</string>
           </property>
           <property name="font">
            <font>
+            <family>Open Sans</family>
+            <pointsize>12</pointsize>
             <weight>75</weight>
             <bold>true</bold>
            </font>
@@ -493,6 +524,8 @@ background-color: #fff;</string>
           </property>
           <property name="font">
            <font>
+            <family>Open Sans</family>
+            <pointsize>12</pointsize>
             <weight>75</weight>
             <bold>true</bold>
            </font>
@@ -539,12 +572,14 @@ background-color: #00007f;
          <widget class="QPushButton" name="del_btn_e">
           <property name="minimumSize">
            <size>
-            <width>80</width>
+            <width>100</width>
             <height>30</height>
            </size>
           </property>
           <property name="font">
            <font>
+            <family>Open Sans</family>
+            <pointsize>12</pointsize>
             <weight>75</weight>
             <bold>true</bold>
            </font>
@@ -582,14 +617,10 @@ background-color: #00007f;
         </item>
         <item row="6" column="0">
          <widget class="QLabel" name="description_2">
-          <property name="maximumSize">
-           <size>
-            <width>79</width>
-            <height>16777215</height>
-           </size>
-          </property>
           <property name="font">
            <font>
+            <family>Open Sans</family>
+            <pointsize>12</pointsize>
             <weight>75</weight>
             <bold>true</bold>
            </font>
@@ -603,6 +634,8 @@ background-color: #00007f;
          <widget class="QTextEdit" name="list_desc_2">
           <property name="font">
            <font>
+            <family>Open Sans</family>
+            <pointsize>12</pointsize>
             <weight>75</weight>
             <bold>true</bold>
            </font>
@@ -626,6 +659,8 @@ background-color: #fff;</string>
           </property>
           <property name="font">
            <font>
+            <family>Open Sans</family>
+            <pointsize>12</pointsize>
             <weight>75</weight>
             <bold>true</bold>
            </font>
@@ -665,12 +700,14 @@ background-color: #00007f;
          <widget class="QLabel" name="name_recipe_2">
           <property name="maximumSize">
            <size>
-            <width>79</width>
+            <width>100</width>
             <height>16777215</height>
            </size>
           </property>
           <property name="font">
            <font>
+            <family>Open Sans</family>
+            <pointsize>12</pointsize>
             <weight>75</weight>
             <bold>true</bold>
            </font>
@@ -690,6 +727,8 @@ background-color: #00007f;
           </property>
           <property name="font">
            <font>
+            <family>Open Sans</family>
+            <pointsize>12</pointsize>
             <weight>75</weight>
             <bold>true</bold>
            </font>
@@ -702,7 +741,7 @@ color: #00007f;
 background-color: #fff;</string>
           </property>
           <property name="placeholderText">
-           <string>Название..</string>
+           <string>Название...</string>
           </property>
          </widget>
         </item>
@@ -747,7 +786,7 @@ background-color: #fff;</string>
          <widget class="QPushButton" name="add_ingr_2">
           <property name="minimumSize">
            <size>
-            <width>80</width>
+            <width>100</width>
             <height>30</height>
            </size>
           </property>
@@ -759,6 +798,8 @@ background-color: #fff;</string>
           </property>
           <property name="font">
            <font>
+            <family>Open Sans</family>
+            <pointsize>12</pointsize>
             <weight>75</weight>
             <bold>true</bold>
            </font>
@@ -804,6 +845,8 @@ background-color: #00007f;
           </property>
           <property name="font">
            <font>
+            <family>Open Sans</family>
+            <pointsize>12</pointsize>
             <weight>75</weight>
             <bold>true</bold>
            </font>
@@ -823,6 +866,8 @@ background-color: #00007f;
           </property>
           <property name="font">
            <font>
+            <family>Open Sans</family>
+            <pointsize>12</pointsize>
             <weight>75</weight>
             <bold>true</bold>
            </font>
@@ -840,12 +885,14 @@ background-color: #fff;</string>
          <widget class="QPushButton" name="cln_btn_e">
           <property name="minimumSize">
            <size>
-            <width>80</width>
+            <width>100</width>
             <height>30</height>
            </size>
           </property>
           <property name="font">
            <font>
+            <family>Open Sans</family>
+            <pointsize>12</pointsize>
             <weight>75</weight>
             <bold>true</bold>
            </font>
@@ -885,12 +932,14 @@ background-color: #00007f;
          <widget class="QPushButton" name="srch_edit_btn">
           <property name="minimumSize">
            <size>
-            <width>80</width>
+            <width>100</width>
             <height>30</height>
            </size>
           </property>
           <property name="font">
            <font>
+            <family>Open Sans</family>
+            <pointsize>12</pointsize>
             <weight>75</weight>
             <bold>true</bold>
            </font>
@@ -942,6 +991,8 @@ background-color: #00007f;
           </property>
           <property name="font">
            <font>
+            <family>Open Sans</family>
+            <pointsize>12</pointsize>
             <weight>75</weight>
             <bold>true</bold>
            </font>
@@ -968,6 +1019,8 @@ background-color: #fff;</string>
           </property>
           <property name="font">
            <font>
+            <family>Open Sans</family>
+            <pointsize>12</pointsize>
             <weight>75</weight>
             <bold>true</bold>
            </font>
@@ -980,7 +1033,7 @@ color: #00007f;
 background-color: #fff;</string>
           </property>
           <property name="placeholderText">
-           <string>Введите название</string>
+           <string>Введите название...</string>
           </property>
          </widget>
         </item>
@@ -1111,12 +1164,14 @@ background-color: #fff;</string>
             <widget class="QPushButton" name="disc_add_ingr">
              <property name="minimumSize">
               <size>
-               <width>80</width>
+               <width>100</width>
                <height>30</height>
               </size>
              </property>
              <property name="font">
               <font>
+               <family>Open Sans</family>
+               <pointsize>12</pointsize>
                <weight>75</weight>
                <bold>true</bold>
               </font>
@@ -1162,8 +1217,8 @@ background-color: #00007f;
              </property>
              <property name="font">
               <font>
-               <family>Open Sans SemiBold</family>
-               <pointsize>10</pointsize>
+               <family>Open Sans</family>
+               <pointsize>12</pointsize>
                <weight>75</weight>
                <bold>true</bold>
               </font>
@@ -1183,6 +1238,8 @@ background-color: #00007f;
              </property>
              <property name="font">
               <font>
+               <family>Open Sans</family>
+               <pointsize>12</pointsize>
                <weight>75</weight>
                <bold>true</bold>
               </font>
@@ -1215,7 +1272,6 @@ background-color: #fff;</string>
     </rect>
    </property>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <tabstops>
   <tabstop>srch_line</tabstop>
@@ -1241,7 +1297,6 @@ background-color: #fff;</string>
   <tabstop>list_ing_e</tabstop>
   <tabstop>cln_btn_e</tabstop>
   <tabstop>list_ing_n</tabstop>
-  <tabstop>tabWidget</tabstop>
   <tabstop>cln_ing</tabstop>
   <tabstop>widget</tabstop>
  </tabstops>
@@ -1254,12 +1309,12 @@ background-color: #fff;</string>
    <slot>clear()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>509</x>
-     <y>284</y>
+     <x>577</x>
+     <y>323</y>
     </hint>
     <hint type="destinationlabel">
-     <x>176</x>
-     <y>128</y>
+     <x>251</x>
+     <y>250</y>
     </hint>
    </hints>
   </connection>
@@ -1270,12 +1325,12 @@ background-color: #fff;</string>
    <slot>clear()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>509</x>
-     <y>316</y>
+     <x>577</x>
+     <y>359</y>
     </hint>
     <hint type="destinationlabel">
-     <x>176</x>
-     <y>160</y>
+     <x>262</x>
+     <y>317</y>
     </hint>
    </hints>
   </connection>

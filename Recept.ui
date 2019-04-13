@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Рецепт</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item alignment="Qt::AlignHCenter">
@@ -19,7 +19,7 @@
      <property name="font">
       <font>
        <family>Open Sans</family>
-       <pointsize>16</pointsize>
+       <pointsize>20</pointsize>
        <weight>75</weight>
        <bold>true</bold>
       </font>
@@ -44,6 +44,8 @@ color: #00007f;
      </property>
      <property name="font">
       <font>
+       <family>Open Sans</family>
+       <pointsize>12</pointsize>
        <weight>75</weight>
        <bold>true</bold>
       </font>
@@ -61,6 +63,8 @@ background-color: #fff;</string>
     <widget class="QTextBrowser" name="disc_recept">
      <property name="font">
       <font>
+       <family>Open Sans</family>
+       <pointsize>12</pointsize>
        <weight>75</weight>
        <bold>true</bold>
       </font>
@@ -84,6 +88,8 @@ background-color: #fff;</string>
      </property>
      <property name="font">
       <font>
+       <family>Open Sans</family>
+       <pointsize>12</pointsize>
        <weight>75</weight>
        <bold>true</bold>
       </font>

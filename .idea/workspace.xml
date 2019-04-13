@@ -10,33 +10,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MainWindow.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="508">
-              <caret line="61" column="4" lean-forward="true" selection-start-line="39" selection-start-column="8" selection-end-line="61" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/receptBook.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
-              <caret line="125" column="54" selection-start-line="125" selection-start-column="54" selection-end-line="125" selection-end-column="54" />
+            <state relative-caret-position="170">
+              <caret line="310" column="72" selection-start-line="310" selection-start-column="72" selection-end-line="310" selection-end-column="72" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
-                <element signature="e#290#2000#0" />
+                <element signature="e#291#2071#0" />
                 <element signature="e#2075#2714#0" />
                 <element signature="e#2785#2968#0" />
-                <element signature="e#3935#4262#0" />
+                <element signature="e#3041#3620#0" />
+                <element signature="e#3698#3867#0" />
+                <element signature="e#5354#5997#0" />
                 <element signature="e#4334#4803#0" />
                 <element signature="e#4879#5405#0" />
                 <element signature="e#5489#5981#0" />
                 <element signature="e#6047#7329#0" />
                 <element signature="e#7395#9715#0" />
-                <element signature="e#9779#11349#0" />
-                <element signature="e#11412#12174#0" />
+                <element signature="e#13139#14242#0" />
                 <element signature="e#12230#12776#0" />
                 <element signature="e#12853#13092#0" />
                 <element signature="e#13175#13358#0" />
@@ -78,6 +70,9 @@
       <find>verti</find>
       <find>sender</find>
       <find>del_recept</find>
+      <find>MainWindow</find>
+      <find>pBtn</find>
+      <find>Ok</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -87,16 +82,16 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/../lessongui/Компиляция/adressbook2.py" />
-        <option value="$PROJECT_DIR$/dialogWindow.py" />
         <option value="$PROJECT_DIR$/alertWindow.py" />
         <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/MainWindow.py" />
         <option value="$PROJECT_DIR$/Recept.py" />
         <option value="$USER_HOME$/Desktop/material-master/material-master/example.py" />
         <option value="$USER_HOME$/Desktop/material-master/material-master/material.py" />
         <option value="$USER_HOME$/Desktop/ntech-test-master/ntech-test-master/client.py" />
         <option value="$USER_HOME$/Desktop/ntech-test-master/ntech-test-master/server.py" />
+        <option value="$PROJECT_DIR$/MainWindow.py" />
         <option value="$PROJECT_DIR$/createFrame.py" />
+        <option value="$PROJECT_DIR$/dialogWindow.py" />
         <option value="$PROJECT_DIR$/receptBook.py" />
       </list>
     </option>
@@ -142,7 +137,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.receptBook">
+    <configuration name="dialogWindow" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="receptBook" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dialogWindow.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="receptBook" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="receptBook" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -167,6 +183,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.receptBook" />
+        <item itemvalue="Python.dialogWindow" />
       </list>
     </recent_temporary>
   </component>
@@ -252,16 +269,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dialogWindow.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="69" column="21" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
-          <folding>
-            <element signature="e#200#210#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/material-master/material-master/material.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -302,16 +309,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/createFrame.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-172">
-          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/alertWindow.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="548">
@@ -321,28 +318,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MainWindow.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="61" column="4" lean-forward="true" selection-start-line="39" selection-start-column="8" selection-end-line="61" selection-end-column="4" />
+        <state relative-caret-position="168">
+          <caret line="792" column="33" selection-start-line="792" selection-start-column="19" selection-end-line="792" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/createFrame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dialogWindow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="57" column="76" selection-start-line="57" selection-start-column="76" selection-end-line="57" selection-end-column="105" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/receptBook.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="125" column="54" selection-start-line="125" selection-start-column="54" selection-end-line="125" selection-end-column="54" />
+        <state relative-caret-position="170">
+          <caret line="310" column="72" selection-start-line="310" selection-start-column="72" selection-end-line="310" selection-end-column="72" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
-            <element signature="e#290#2000#0" />
+            <element signature="e#291#2071#0" />
             <element signature="e#2075#2714#0" />
             <element signature="e#2785#2968#0" />
-            <element signature="e#3935#4262#0" />
+            <element signature="e#3041#3620#0" />
+            <element signature="e#3698#3867#0" />
+            <element signature="e#5354#5997#0" />
             <element signature="e#4334#4803#0" />
             <element signature="e#4879#5405#0" />
             <element signature="e#5489#5981#0" />
             <element signature="e#6047#7329#0" />
             <element signature="e#7395#9715#0" />
-            <element signature="e#9779#11349#0" />
-            <element signature="e#11412#12174#0" />
+            <element signature="e#13139#14242#0" />
             <element signature="e#12230#12776#0" />
             <element signature="e#12853#13092#0" />
             <element signature="e#13175#13358#0" />

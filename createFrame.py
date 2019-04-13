@@ -38,7 +38,7 @@ class crF():
         gridLayout_14.addWidget(pBtn, 0, 1, 1, 1)
         label = QLabel(frame)
         font = QFont()
-        font.setFamily("Open Sans ExtraBold")
+        font.setFamily("Open Sans")
         font.setPointSize(12)
         font.setBold(True)
         font.setWeight(75)

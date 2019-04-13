@@ -17,7 +17,7 @@ class Ui_recept(object):
         self.name_recept = QtWidgets.QLabel(recept)
         font = QtGui.QFont()
         font.setFamily("Open Sans")
-        font.setPointSize(16)
+        font.setPointSize(20)
         font.setBold(True)
         font.setWeight(75)
         self.name_recept.setFont(font)
@@ -29,6 +29,8 @@ class Ui_recept(object):
         self.list_ingr = QtWidgets.QTextBrowser(recept)
         self.list_ingr.setMaximumSize(QtCore.QSize(16777215, 150))
         font = QtGui.QFont()
+        font.setFamily("Open Sans")
+        font.setPointSize(12)
         font.setBold(True)
         font.setWeight(75)
         self.list_ingr.setFont(font)
@@ -41,6 +43,8 @@ class Ui_recept(object):
         self.verticalLayout.addWidget(self.list_ingr)
         self.disc_recept = QtWidgets.QTextBrowser(recept)
         font = QtGui.QFont()
+        font.setFamily("Open Sans")
+        font.setPointSize(12)
         font.setBold(True)
         font.setWeight(75)
         self.disc_recept.setFont(font)
@@ -54,6 +58,8 @@ class Ui_recept(object):
         self.quitBtn = QtWidgets.QPushButton(recept)
         self.quitBtn.setMinimumSize(QtCore.QSize(0, 30))
         font = QtGui.QFont()
+        font.setFamily("Open Sans")
+        font.setPointSize(12)
         font.setBold(True)
         font.setWeight(75)
         self.quitBtn.setFont(font)
@@ -89,7 +95,7 @@ class Ui_recept(object):
 
     def retranslateUi(self, recept):
         _translate = QtCore.QCoreApplication.translate
-        recept.setWindowTitle(_translate("recept", "Form"))
+        recept.setWindowTitle(_translate("recept", "Рецепт"))
         self.name_recept.setText(_translate("recept", "TextLabel"))
         self.quitBtn.setText(_translate("recept", "Закрыть"))
 

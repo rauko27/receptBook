@@ -2,11 +2,13 @@ from PyQt5 import QtWidgets
 import sys
 import sqlite3
 
+from PyQt5.QtWidgets import QMessageBox
+
+import MainWindow
 from MainWindow import Ui_MainWindow
 from alertWindow import Ui_Dialog
 from Recept import Ui_recept
 from createFrame import crF
-from dialogWindow import Ui_Dialog
 
 class mywindow(QtWidgets.QMainWindow):
     def __init__(self):
@@ -86,6 +88,7 @@ class mywindow(QtWidgets.QMainWindow):
         self.alertW.show()
         self.alertUi.label.setText(textAlert)
 
+
     # вывод всех ингридиентов в таблицу
     def all_ing(self):
         self.ui.table_ingr.setRowCount(0)
@@ -133,15 +136,19 @@ class mywindow(QtWidgets.QMainWindow):
 
     # удаление ингридиента
     def del_ing(self, id_ing):
-        id_ing=int(id_ing)
-        self.sql = "DELETE FROM indridient WHERE id =?"
-        self.cursor.execute(self.sql, [(id_ing)])
-        self.conn.commit()
-        self.ui.table_ingr.setRowCount(0)
-        self.all_ing()
-        self.textAlert = "Ингридиент удален"
-        self.alertWindow(self.textAlert)
-        self.qComboBox()
+        reply = QMessageBox.question(self, ' ',
+                                                 "Вы уверены что хотите удалить ингридиент?", QMessageBox.Yes |
+                                                 QMessageBox.No, QMessageBox.No)
+        if reply == QMessageBox.Yes:
+            id_ing = int(id_ing)
+            self.sql = "DELETE FROM indridient WHERE id =?"
+            self.cursor.execute(self.sql, [(id_ing)])
+            self.conn.commit()
+            self.ui.table_ingr.setRowCount(0)
+            self.all_ing()
+            self.textAlert = "Ингридиент удален"
+            self.alertWindow(self.textAlert)
+            self.qComboBox()
 
     # Наполлнение выподающего спсика
     def qComboBox(self):
@@ -300,70 +307,74 @@ class mywindow(QtWidgets.QMainWindow):
 
     # сохранение изменений
     def save_change(self):
-        name = self.ui.src_edit_line.text()
-        self.sql = "SELECT id FROM recept WHERE name=?"
-        self.cursor.execute(self.sql, [(name)])
-        self.conn.commit()
-        rec_id = self.cursor.fetchall()[0][0]
-        rec_name = self.ui.name_2.text()
+        reply = QMessageBox.question(self, ' ',
+                                         "Вы уверены что хотите изменить рецпт?", QMessageBox.Yes |
+                                         QMessageBox.No, QMessageBox.No)
+        if reply == QMessageBox.Yes:
+            name = self.ui.src_edit_line.text()
+            self.sql = "SELECT id FROM recept WHERE name=?"
+            self.cursor.execute(self.sql, [(name)])
+            self.conn.commit()
+            rec_id = self.cursor.fetchall()[0][0]
+            rec_name = self.ui.name_2.text()
 
-        desc = self.ui.list_desc_2.toPlainText()
-        desc = desc.splitlines()
+            desc = self.ui.list_desc_2.toPlainText()
+            desc = desc.splitlines()
 
-        self.sql = "UPDATE recept SET name=? WHERE id=?"
-        self.cursor.execute(self.sql, [rec_name, rec_id])
-        id_recept = rec_id
-        self.conn.commit()
+            self.sql = "UPDATE recept SET name=? WHERE id=?"
+            self.cursor.execute(self.sql, [rec_name, rec_id])
+            id_recept = rec_id
+            self.conn.commit()
 
-        self.sql = "DELETE FROM recept_ing WHERE id_recept=?"
-        self.cursor.execute(self.sql, [id_recept])
-        self.sql = "DELETE FROM description WHERE id_recept=?"
-        self.cursor.execute(self.sql, [id_recept])
+            self.sql = "DELETE FROM recept_ing WHERE id_recept=?"
+            self.cursor.execute(self.sql, [id_recept])
+            self.sql = "DELETE FROM description WHERE id_recept=?"
+            self.cursor.execute(self.sql, [id_recept])
 
-        for i in range(0,len(self.list_ingr_e),3):
-            id_ingr = self.list_ingr_e[i]
-            vol_ing = self.list_ingr_e[i+2]
-            self.sql = "INSERT INTO recept_ing (id_recept, id_ingr, vol_ing) VALUES (?,?,?)"
-            self.cursor.execute(self.sql, [id_recept, id_ingr, vol_ing])
-        self.conn.commit()
+            for i in range(0,len(self.list_ingr_e),3):
+                id_ingr = self.list_ingr_e[i]
+                vol_ing = self.list_ingr_e[i+2]
+                self.sql = "INSERT INTO recept_ing (id_recept, id_ingr, vol_ing) VALUES (?,?,?)"
+                self.cursor.execute(self.sql, [id_recept, id_ingr, vol_ing])
+            self.conn.commit()
 
-        for i in range(len(desc)):
-            desc_row = desc[i]
-            self.sql = "INSERT INTO description (id_recept, desc) VALUES (?,?)"
-            self.cursor.execute(self.sql, [id_recept, desc_row])
-        self.conn.commit()
+            for i in range(len(desc)):
+                desc_row = desc[i]
+                self.sql = "INSERT INTO description (id_recept, desc) VALUES (?,?)"
+                self.cursor.execute(self.sql, [id_recept, desc_row])
+            self.conn.commit()
 
-        self.ui.src_edit_line.clear()
-        self.ui.name_2.clear()
-        self.ui.list_ing_e.clear()
-        self.ui.list_desc_2.clear()
-        self.list_ingr_e.clear()
-        self.textAlert = "Рецепт успешно обновлен"
-        self.alertWindow(self.textAlert)
+            self.ui.src_edit_line.clear()
+            self.ui.name_2.clear()
+            self.ui.list_ing_e.clear()
+            self.ui.list_desc_2.clear()
+            self.list_ingr_e.clear()
+            self.textAlert = "Рецепт успешно обновлен"
+            self.alertWindow(self.textAlert)
 
     # Удаление рецепта
     def del_recept(self):
-
-
-
-
-        name = self.ui.src_edit_line.text()
-        self.sql = "SELECT id FROM recept WHERE name=?"
-        self.cursor.execute(self.sql, [(name)])
-        rec_id = self.cursor.fetchall()[0][0]
-        self.sql = "DELETE FROM recept_ing WHERE id_recept=?"
-        self.cursor.execute(self.sql, [rec_id])
-        self.sql = "DELETE FROM description WHERE id_recept=?"
-        self.cursor.execute(self.sql, [rec_id])
-        self.sql = "DELETE FROM recept WHERE id=?"
-        self.cursor.execute(self.sql, [rec_id])
-        self.conn.commit()
-        self.ui.src_edit_line.clear()
-        self.ui.name_2.clear()
-        self.ui.list_ing_e.clear()
-        self.ui.list_desc_2.clear()
-        self.textAlert = "Рецепт успешно удален"
-        self.alertWindow(self.textAlert)
+        reply = QMessageBox.question(self, ' ',
+                                         "Вы уверены что хотите удалить рецпт?", QMessageBox.Yes |
+                                         QMessageBox.No, QMessageBox.No)
+        if reply == QMessageBox.Yes:
+            name = self.ui.src_edit_line.text()
+            self.sql = "SELECT id FROM recept WHERE name=?"
+            self.cursor.execute(self.sql, [(name)])
+            rec_id = self.cursor.fetchall()[0][0]
+            self.sql = "DELETE FROM recept_ing WHERE id_recept=?"
+            self.cursor.execute(self.sql, [rec_id])
+            self.sql = "DELETE FROM description WHERE id_recept=?"
+            self.cursor.execute(self.sql, [rec_id])
+            self.sql = "DELETE FROM recept WHERE id=?"
+            self.cursor.execute(self.sql, [rec_id])
+            self.conn.commit()
+            self.ui.src_edit_line.clear()
+            self.ui.name_2.clear()
+            self.ui.list_ing_e.clear()
+            self.ui.list_desc_2.clear()
+            self.textAlert = "Рецепт успешно удален"
+            self.alertWindow(self.textAlert)
 
     # поиск рецепта
     def src_recept(self):
